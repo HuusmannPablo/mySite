@@ -7,10 +7,9 @@ header {
     display: flex;
     justify-content: flex-start;
     background-color: black;
-    /* border-color: black; */
 }
 
-/* Stablish background color */
+/* Stablish background image */
 body {
     /* background-image: url('backgroundGreen.jpg'); */
     background-image: url('backgroundBlack.jpg');
@@ -21,7 +20,6 @@ body {
 
 .button {
     font-style: italic;
-    /* background-color: #c0f8c4; */
     margin: 0px 5px;
     padding: 3px 15px;
     text-align: center;
@@ -31,6 +29,7 @@ body {
     border-style: solid;
     border-color: black;
     transition: border-color 0.3s;
+    border-radius: 5px;
 }
 
 .button:hover {
@@ -55,6 +54,29 @@ h1 {
     color: rgb(139, 224, 113);
     align-self: center;
     margin-top: 50pt;
+    margin-bottom: 15pt;
+}
+
+#name {
+    position: relative;
+}
+
+#name::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background:rgb(139, 224, 113);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+#name:hover::after {
+    transform: scale(1);
+    transform-origin: left;
 }
 
 img {
@@ -75,6 +97,7 @@ h2 {
     justify-content: center;
     text-align: center;
     line-height: 100pt;
+    margin-top: 50pt;
     font-family: 'Nunito', sans-serif;
     font-size: 20pt;
 }
@@ -101,7 +124,7 @@ input[type=text]:focus, input[type=email]:focus {
     border: black;
   }
 
-  textarea {
+textarea {
     display: flex;
     background-color: #a7a7a7;
     color: black;
@@ -109,8 +132,7 @@ input[type=text]:focus, input[type=email]:focus {
     border-radius: 5px;
     border-color: black;
     margin: auto;
-    /* width: 20%; */
-    /* to change width go to HTML */
+    width: 20%;
     resize: none;
 }
 
@@ -141,26 +163,40 @@ input::placeholder {
     font-family: Tahoma;
 }
 
-#icons {
+.icons {
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     text-decoration: none;
+    color: #c7c7c7;
+    gap: 20px;
+    padding: 0%;
 }
+
+.icons #facebook:hover {
+    color: #4267B2;
+    /* background-color: white; */
+    padding: 0%;
+    margin: 0%;
+}
+
+.icons #linkedIn:hover {
+    color: #0e76a8;
+    /* background-color: white; */
+}
+
+.icons #instagram:hover {
+    color: #fb3958;
+}
+
 
 /* Styling the footer */
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    flex: auto;    
     color: #c7c7c7;
     background-color: black;
+    margin-top: 5pt;
+    padding-top: 5pt;
 }
-
-/* #facebookIcon:hover {
-    text-decoration: blue;
-} 
-Trying to make th facebook icon to turn blue when hover*/
 
 a:link {
     text-decoration: none;
@@ -171,8 +207,21 @@ a:hover {
     text-decoration: blue;
 }
 
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
 @media screen and (max-width: 768px) {
     .header {
     flex-direction: column;
+    }
+
+    textarea {
+        width: 40%;
+    }
+
+    input[type=text], input[type=email] {
+        width: 40%;
     }
     }
