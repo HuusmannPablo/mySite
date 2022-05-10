@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking to CSS -->
+    <link href="mySite.css" rel="stylesheet" type="text/css">
+    <!-- Linking Icons -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Linking Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Nunito:wght@500&display=swap" rel="stylesheet">    <title>My Personal Website</title>
+</head>
+
+<body>
+    <!-- Header with the main buttons to navigate -->
+    <header class="header">
+        <div class="button">HOME</div>
+        <div class="button">ABOUT</div>
+        <div class="button">PORTFOLIO</div>
+        <div class="button">RESUME</div>
+        <div class="button">CONTACT</div>
+    </header>
+
+    <!-- Main section -->
+    <section class="home">
+        <!-- Sections for presentation -->
+        <h1 id="name">
+            PABLO HUUSMANN
+        </h1>
+
+        <!-- Profile Picture -->
+        <div id="photo">
+            <img src="profilePicture.png" alt="Profile Picture" width="50%"> 
+        </div><br>
+        
+        <!-- Introduction text -->
+        <p id="intro">
+            "Hey there! Let me tell you a bit about myself. <br>
+            I'm an Aeronautical Engineer bornt in Argentina, with a great passion for matemathics and physics, but also someone who doesn't stop wondering how everything works. <br>
+            <br>
+            My journey has taken me to places I would have never imagined I could be. I have developed concrete mixes and structures, asphalt mixes for roads and runways, and right now, I'm learning to develop WEBS!<br>
+            <br>
+            At the moment I'm getting familiar with front-end lenguages like HTML, CSS, JS, and some Python concepts."<br>
+            <br>
+        </p>
+        
+    </section>
+    
+    <!-- Second section for contacting -->
+    <section>
+        <h2>CONTACT</h2>
+        <div>
+            <p>If you want to  get in touch, please use the form below:</p>
+        </div>
+
+        <!-- Emailing form -->
+        <form action="mailto:pabloh@missionreadyhq.com" method="post" target="_blank" autocomplete="on">
+            <input placeholder="Name" type="text" name="name"> <br>
+            <input placeholder="Email" type="email" name="email"> <br>
+            <textarea placeholder="Your message" type="textbox" name="message" style="width: 20%; height: 100px"></textarea><br>
+            <input type="submit" value="Submit" onclick="alert('Thanks for getting in touch!')"><br>
+        </form>
+    </section>
+
+    <!-- Third Section for Icons -->
+    <section>
+        <div id="icons">
+            <a href="https://www.facebook.com/pablo.huusmann"target="_blank">
+                <i class="fa fa-facebook-square fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-huusmann/" target="_blank">
+                <i class="fa fa-linkedin-square fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/pablohuusmann/?hl=en" target="_blank">
+                <i class="fa fa-instagram fa-2x"></i>
+            </a>
+        </div>
+    </section>
+    <br>
+
+    <!-- Footer with trademarks and author -->
+    <footer class="trademark">
+        <p>
+            <a href='https://www.freepik.com/photos/smoky-background'>Background photo created by kjpargeter</a><br>
+        <!-- <a href='https://www.freepik.com/photos/linen-background' target="_blank">Background photo created by dashu83</a><br><br> -->
+            <br>
+        </p>
+        <p>
+            Powered by Pablo & Mission Ready HQ
+        </p>
+        <br>
+    </footer>
+
+</body>
+</html>
