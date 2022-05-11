@@ -194,8 +194,19 @@ footer {
     flex: auto;    
     color: #c7c7c7;
     background-color: black;
-    margin-top: 5pt;
+    margin-top: 25pt;
     padding-top: 5pt;
+}
+
+footer p {
+    font-size: small;
+    font-style: italic;
+}
+
+h3 {
+    text-align: right;
+    font-size: medium;
+    margin-right: 5pt;
 }
 
 a:link {
