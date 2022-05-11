@@ -34,7 +34,8 @@ body {
 
 .button:hover {
     border-style: solid;
-    border-color: #8dc78b;
+    border-color: #31d31c;
+    color: #31d31c;
     border-radius: 5px;
 }
 
@@ -61,6 +62,10 @@ h1 {
     position: relative;
 }
 
+#name:hover {
+    color: #31d31c;
+}
+
 #name::after {
     content: "";
     position: absolute;
@@ -68,7 +73,7 @@ h1 {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background:rgb(139, 224, 113);
+    background:#31d31c;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 250ms ease-in;
@@ -140,6 +145,7 @@ input[type=submit] {
     display: flex;
     background-color: #202020;
     margin: auto;
+    margin-bottom: 100px;
     padding: 0px 10px;
     border-style: solid;
     border-color: black;
@@ -153,7 +159,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
     border-style: solid;
-    border-color: #8dc78b;
+    color: #31d31c;
+    border-color: #31d31c;
     border-radius: 5px;
     background-color: black;
 }
@@ -163,7 +170,56 @@ input::placeholder {
     font-family: Tahoma;
 }
 
-.icons {
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.5);
+    margin: 0 30px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a .fab {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 500ms;
+}
+
+.social-links a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #31d31c, #15c4a7);
+    position: absolute;
+    transition: 500ms;
+}
+
+.social-links a:hover::after {
+    top: 0;
+}
+
+.social-links a:hover .fab {
+    color: #fff;
+}
+
+.social-links a:hover {
+    transform: translateY(-10px);
+}
+
+/* .icons {
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -174,19 +230,17 @@ input::placeholder {
 
 .icons #facebook:hover {
     color: #4267B2;
-    /* background-color: white; */
     padding: 0%;
     margin: 0%;
 }
 
 .icons #linkedIn:hover {
     color: #0e76a8;
-    /* background-color: white; */
 }
 
 .icons #instagram:hover {
     color: #fb3958;
-}
+} */
 
 
 /* Styling the footer */
