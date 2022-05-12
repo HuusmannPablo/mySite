@@ -1,0 +1,29 @@
+[33mcommit c8d815472f6db232800fa74daf05b9a5eee8f622[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Pablo Huusmann <huusmannpablo@gmail.com>
+Date:   Thu May 12 10:50:08 2022 +1200
+
+    New social logos, and brighter green color
+
+[33mcommit d368355bfab317fe72360ae67a0177e73d179c46[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Pablo Huusmann <huusmannpablo@gmail.com>
+Date:   Wed May 11 16:18:09 2022 +1200
+
+    Presented version
+
+[33mcommit 26ce900fbe244354a3a2275ab021ff9cb4a65d0b[m
+Author: Pablo Huusmann <huusmannpablo@gmail.com>
+Date:   Wed May 11 10:40:15 2022 +1200
+
+    Final touches added for Mission 1 presentation
+
+[33mcommit 8d7443d4f50f1b74e535a437a5801724627e5874[m
+Author: Pablo Huusmann <huusmannpablo@gmail.com>
+Date:   Tue May 10 15:53:26 2022 +1200
+
+    Margin added to the NAME
+
+[33mcommit 6b8c6350fbd3b384ef1e74a214135d16b540a103[m
+Author: Pablo Huusmann <huusmannpablo@gmail.com>
+Date:   Tue May 10 15:31:11 2022 +1200
+
+    First version of the page, only HTML and CSS files

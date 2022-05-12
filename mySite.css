@@ -219,30 +219,6 @@ input::placeholder {
     transform: translateY(-10px);
 }
 
-/* .icons {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #c7c7c7;
-    gap: 20px;
-    padding: 0%;
-}
-
-.icons #facebook:hover {
-    color: #4267B2;
-    padding: 0%;
-    margin: 0%;
-}
-
-.icons #linkedIn:hover {
-    color: #0e76a8;
-}
-
-.icons #instagram:hover {
-    color: #fb3958;
-} */
-
-
 /* Styling the footer */
 footer {
     flex: auto;    
