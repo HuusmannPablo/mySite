@@ -20,7 +20,7 @@
         <div class="button">ABOUT</div>
         <div class="button">PORTFOLIO</div>
         <div class="button">RESUME</div>
-        <div class="button">CONTACT</div>
+        <div class="button" id="contactButton">CONTACT</div>
     </header>
 
     <!-- Main section -->
@@ -51,7 +51,7 @@
     <!-- Second section for contacting -->
     
     <section id="contact">
-        <div class="sectionheader">	<h1>CONTACT</h1></div>
+        <div class="sectionheader"><h1>CONTACT</h1></div>
         <article>
         <p id="contact_text">If you want to  get in touch, please use the form below:</p><br>
             
@@ -62,7 +62,7 @@
                     <p class="input_wrapper"><input type="text" name="contact_email" value=""  id ="contact_email"><label for="contact_email">EMAIL</label></p>
                     <p class="input_wrapper"><input type="text" name="contact_sujet" value=""  id ="contact_sujet"><label for="contact_sujet">SUBJECT</label></p>
                     <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"></textarea></p>
-                    <p class="submit_wrapper"><input type="submit" value="SUBMIT"></p>			
+                    <a href=""><p class="submit_wrapper"><input type="submit" id="submitButton" value="SUBMIT"></p></a>			
                 </form>
         </article>
     </section>
@@ -92,6 +92,6 @@
         </h3>
         <br>
     </footer>
-
+    <script src="app.js"></script>
 </body>
 </html>
