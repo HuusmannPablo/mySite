@@ -14,18 +14,18 @@
 </head>
 
 <body>
-    <!-- Header with the main buttons to navigate -->
+    <!-- Header with the main buttons to navigate - NAVBAR -->
     <header class="header">
         <div class="button">HOME</div>
-        <div class="button">ABOUT</div>
-        <div class="button">PORTFOLIO</div>
+        <div class="button" id="aboutButton">ABOUT</div>
+        <div class="button" id="portfolioButton">PORTFOLIO</div>
         <div class="button">RESUME</div>
         <div class="button" id="contactButton">CONTACT</div>
     </header>
 
     <!-- Main section -->
     <section class="home">
-        <!-- Sections for presentation -->
+        <!-- Section for presentation -->
         <h1 id="name">
             PABLO HUUSMANN
         </h1>
@@ -35,7 +35,11 @@
             <img src="profilePicture.png" alt="Profile Picture" width="50%"> 
         </div><br>
         
-        <!-- Introduction text -->
+        <!-- Introduction header and text -->
+        <div id="headerAboutMe">
+            <h2>ABOUT ME</h2>
+        </div>
+
         <p id="intro">
             "Hey there! Let me tell you a bit about myself. <br>
             I'm an Aeronautical Engineer bornt in Argentina, with a great passion for matemathics and physics, but also someone who doesn't stop wondering how everything works. <br>
@@ -48,7 +52,30 @@
         
     </section>
     
-    <!-- Second section for contacting -->
+<!-- PORTFOLIO Slider Section  -->
+<!-- Header -->
+<div id="headerPortfolio">
+    <h2>PORTFOLIO</h2>
+</div>
+<!-- Slider -->
+<div class="wrapper">
+	
+    <!-- Buttons to slide -->
+    <button class="rightButt" onclick="plusDivs(+1)">&#10095;</button>
+    <button class="leftButt" onclick="plusDivs(-1)">&#10094;</button>
+	<ul id="imageSlider">
+     
+        <!-- Images in the slide -->
+		<li><img src='https://www.indiewire.com/wp-content/uploads/2017/10/matrix-code.jpg' class="mySlides"></li>
+		<li><img src='https://cms.qz.com/wp-content/uploads/2016/08/feat-code.png?quality=75&strip=all&w=1600&h=900&crop=1' class="mySlides"></li>
+		<li><img src='https://images.ctfassets.net/lzny33ho1g45/learn-html-css-p-img/12978ef50623cf76538cfe18e1011fc5/file.png?w=1520&fm=jpg&q=30&fit=thumb&h=760' class="mySlides"></li>
+		<li><img src='https://www.audero.it/blog/wp-content/uploads/2014/09/front-end-stack.png' class="mySlides"></li>
+	</ul>
+
+</div>
+
+
+<!-- CONTACT FORM SECTION -->
     
     <section id="contact">
         <div class="sectionheader"><h1>CONTACT</h1></div>
@@ -68,7 +95,7 @@
     </section>
 
 
-    <!-- Third Section for Icons -->
+    <!-- SOCIAL MEDIA ICONS SECTION -->
     <section>
         <div class="social-links">
             <a href="https://www.facebook.com/pablo.huusmann" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -80,7 +107,7 @@
     </section>
     <br>
 
-    <!-- Footer with trademarks and author -->
+    <!-- FOOTER WITH TRADEMARKS AND AUTHOR -->
     <footer class="trademark">
         <p>
             Background photo created by <a href='https://www.freepik.com/photos/smoky-background' target="_blank">kjpargeter.</a><br>
@@ -92,6 +119,9 @@
         </h3>
         <br>
     </footer>
+
+    <!-- LINKING JAVASCRIPT FILE -->
     <script src="app.js"></script>
+
 </body>
 </html>
