@@ -9,6 +9,19 @@ header {
     background-color: black;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+  }
+
 /* Stablish background image */
 body {
     /* background-image: url('backgroundGreen.jpg'); */
@@ -57,7 +70,7 @@ h1 {
     font-weight: 400;
     color: #72e250;
     align-self: center;
-    margin-top: 50pt;
+    margin-top: 80pt;
     margin-bottom: 15pt;
 }
 
@@ -95,7 +108,7 @@ img {
 
 #headerAboutMe h2 {
     color: #72e250;
-    margin-top: 0%;
+    margin-top: 40pt;
 }
 
 #intro {
@@ -111,6 +124,7 @@ img {
 
 #headerPortfolio h2 {
     color: #72e250;
+    padding-top: 30pt;
 }
 
 .wrapper {
@@ -480,8 +494,12 @@ a:visited {
 @media screen and (max-width: 768px) {
     .header {
     flex-direction: column;
+    position: absolute;
     }
 
+    h1 {
+        margin-top: 250pt;
+    }
     textarea {
         width: 40%;
     }
