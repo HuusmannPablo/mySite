@@ -57,22 +57,28 @@ function scrollToPortfolio() {
 portfolioButtonjs.addEventListener('click', scrollToPortfolio);
 
 // Slider animation
-
-var slideIndex = 1;
+// Initialize with value 1
+let slideIndex = 1;
 showDivs(slideIndex);
 
+// Clicking the arrow's function
 function plusDivs(n) {
     showDivs(slideIndex += n)
 };
 
+
 function showDivs(n) {
-  var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1} 
-    if (n < 1) {slideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[slideIndex-1].style.display = "block"; 
-   
-}
+    let i;
+// Create element in JS for Slide List of Pictures
+    let mySlidesJS = document.getElementsByClassName("mySlides");
+// Check if n is bigger than the amount of pictures, reset to 1 if true
+    if (n > mySlidesJS.length) {slideIndex = 1}; 
+// Check if n is lower than 1 (clicking left on picture 1), then reset to last picture of the list
+    if (n < 1) {slideIndex = mySlidesJS.length};
+// Loop through the list and "hide" all the pictures
+    for (i = 0; i < mySlidesJS.length; i++) {
+        mySlidesJS[i].style.display = "none"; 
+    };
+// Show the picture with the right index (index in the array goes from 0 to n)
+    mySlidesJS[slideIndex-1].style.display = "block"; 
+};

@@ -148,7 +148,7 @@ li {
  .leftButt, .rightButt {
 
     position: absolute;
-    top:50%;
+    top:40%;
 
     z-index: 999;
     display: block;
@@ -172,7 +172,8 @@ li {
 button:hover {
  	opacity: 0.5;
  }
-imgb:hover{
+
+ #imageSlider img:hover{
 	opacity: 0.9;
 	cursor: pointer;
 }
@@ -181,6 +182,7 @@ imgb:hover{
 	from{opacity:0;}
 	to {opacity: 1;}
 }    
+
 /* Contact Title */
 
 h2 {
